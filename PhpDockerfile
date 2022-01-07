@@ -1,0 +1,3 @@
+FROM php:7.4.16-apache
+RUN a2enmod rewrite && apt-get -y update && apt-get -y install git && \
+  curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
